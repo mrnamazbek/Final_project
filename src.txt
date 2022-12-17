@@ -1,0 +1,7 @@
+https://www.beatstars.com/assets/img/genres/rb.jpg
+	https://www.beatstars.com/assets/img/genres/hip-hop.jpg
+    	https://www.beatstars.com/assets/img/genres/pop.jpg
+        	https://www.beatstars.com/assets/img/genres/rock.jpg
+            https://www.beatstars.com/assets/img/genres/electronic.jpg
+            https://www.beatstars.com/assets/img/genres/country.jpg
+
