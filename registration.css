@@ -11,10 +11,26 @@ body {
     justify-content: center;
     background-image: url("./reg-photo.jpeg");
     background-size: 100%;
+    background: linear-gradient(-45deg, #ff0000, #0000ff);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
 }
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 .reg-area {
     position: relative;
-    max-width: 370px;
+    max-width: 500px;
     width: 100%;
     padding: 25px;
     border-radius: 10px;
@@ -51,10 +67,10 @@ form .input-field {
     border-bottom-width: 3px;
 }
 form .field .input-field input:focus{
-    border-color: #5372F0;
+    border-color: #0033ff;
 }
 form .field.invalid input {
-    border-color: #d93025;
+    border-color: #fb005c;
 }
 .input-field .show-hide {
     position: absolute;
