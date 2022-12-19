@@ -74,3 +74,8 @@ function showSubmitButton() {
 }
 
 input.addEventListener('input', showSubmitButton);
+var subs = document.getElementById('sbtn');
+subs.onclick= function() {
+  subs.style.backgroundColor = "green";
+  subs.innerHTML = 'Done!';
+}

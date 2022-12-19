@@ -878,3 +878,13 @@ hr.style-five {
 hr.style-five:after {  /* Not really supposed to work, but does */
   content: "\00a0";  /* Prevent margin collapse */
 }
+/*footer part*/
+.sony {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  font-size: larger;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+  text-decoration: none;
+}
