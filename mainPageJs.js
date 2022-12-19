@@ -1,5 +1,7 @@
-document.querySelector('video').defaultPlaybackRate = 0.5;
-document.querySelector('video').play();
+// document.querySelector('video').defaultPlaybackRate = 0.5;
+// document.querySelector('video').play(); 
+// var vid = document.getElementById("video");
+// vid.volume = 1.0;
 
 let numbers = [1, 2, 3, 4, 5, 6, 7, 8];
 
@@ -22,7 +24,8 @@ cart2.onmouseover = function() {
     'C:\Users\а\Desktop\finImages\eyJidWNrZXQiOiJidHMtY29udGVudCIsImtleSI6InVzZXJzL3Byb2QvMTEyNjcvaW1hZ2UvUmlKVnFFQjl3ZmQ3L2p1bGNvdmVyLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJmaWxsIiwid2lkdGgiOjQwMCwiaGVpZ2h0Ijo0MDB9fX0=.png',
     'C:\Users\а\Desktop\finImages\eyJidWNrZXQiOiJwcm9kLWJ0cy1wbGF5bGlzdCIsImtleSI6InByb2QvcGxheWxpc3QvYXJ0d29yay9QTDUwMDU5NTgvYXJ0d29yay5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiZmlsbCIsIndpZHRoIjo0MDAsImhlaWdodCI6NDAwfX19.png'
  ];
- let 
+
+
  for(var i = 0; i < 5; i++) {
     
     arrayImg[i].onmouseout = function() {
