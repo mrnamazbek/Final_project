@@ -15,8 +15,90 @@
 </head>
 
 <body>
-    <div class="header">
-
+      <div class="topnav">
+        <img src="favicon.svg" id="beatIcon">
+        <div id="usernameDiv" class="inputsMain">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input id="username" type="text" placeholder="Tracks">
+            <!-- <div class="dropdown"> -->
+            <div class="dropbtn2" style="color: rgb(0, 0, 0);">All</div>
+            <div class="dropdown-content">
+                <a href="#">All</a>
+                <a href="#">Tracks</a>
+                <a href="#">Musicians</a>
+                <a href="#">Playlists</a>
+                <a href="#">Albums</a>
+                <a href="#">Sound Kits</a>
+                <a href="#">Services</a>
+            </div>
+            <!-- </div> -->
+        </div>
+        <!-- <div id="search"><input type="text" id="search" placeholder="Search..">
+            <div class="dropdown">
+                <div class="dropbtn2" style="color: rgb(0, 0, 0);">Tracks</div>
+                <div class="dropdown-content">
+                    <a href="#">All</a>
+                    <a href="#">Tracks</a>
+                    <a href="#">Musicians</a>
+                    <a href="#">Playlists</a>
+                    <a href="#">Albums</a>
+                    <a href="#">Sound Kits</a>
+                    <a href="#">Services</a>
+                </div>
+            </div>
+        </div> -->
+        <div class="dropdown">
+            <button class="dropbtn">Explore
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">All</a>
+                <a href="#">Tracks</a>
+                <a href="#">Musicians</a>
+                <a href="#">Playlists</a>
+                <a href="#">Albums</a>
+                <a href="#">Sound Kits</a>
+                <a href="#">Services</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Creator
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">All</a>
+                <a href="#">Tracks</a>
+                <a href="#">Musicians</a>
+                <a href="#">Playlists</a>
+                <a href="#">Albums</a>
+                <a href="#">Sound Kits</a>
+                <a href="#">Services</a>
+            </div>
+        </div>
+        <div class="regis">
+            <a href=""><button class="sign">Sign Up</button></a>
+            <p>|</p>
+            <button class="sign">Sign In</button>
+            <button class="startSell">Start Selling</button>
+            <i id="cart" class="fa-solid fa-cart-shopping" style="color: white;"></i>
+            <i id="cart2" class="fa-solid fa-cart-plus" style="color: white;"></i>
+        </div>
+    </div>
+    <div class="category">
+        <div>Feed</div>
+        <div>Tracks</div>
+        <div>Distribution</div>
+        <div>Publishing</div>
+        <div class="inCategory">
+            <h3>Beat ID</h3>
+            <button style="border-radius: 12px;
+            background-color:yellow;height: 24px;width:40px">New</button>
+        </div>
+        <div class="inCategory">
+            <h3>Gift Card</h3>
+            <button style="border-radius: 12px;
+            background-color:yellow;height: 24px;width:40px">New</button>
+        </div>
     </div>
     <div class="childishvideo">
             <video id="childishvideo" autoplay loop muted controls++ preload="none">
@@ -114,7 +196,7 @@
                 <p class="therow">Youtube Content ID</p>
                 <hr class="thehr">
                 <i class="uil uil-check-circle"></i>
-            </div>  
+            </div>
             <div class="benefitrow">
                 <p class="therow">Option to upload to 40+ Streaming & Social Platforms</p>
                 <hr class="thehr">
