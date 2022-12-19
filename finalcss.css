@@ -1,0 +1,688 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+#release {
+    position: relative;
+    text-transform: uppercase;
+    display: block;
+    width: 55%;
+    top: 300px;
+    left: 15%;
+    color: white;
+    font-size: 50px;
+}
+
+.childishvideo{
+    width: 100%;
+    height: 100vh;
+}
+
+.childishvideo p {
+    color: white;
+    position: relative;
+    left: 15%;
+    top: 300px;
+    padding-top: 30px;
+    pointer-events: none;
+    font-size: 23px;
+
+}
+
+.childishvideo input{
+    position: relative;
+    width: unset;
+    height: unset;
+    border-radius: 9px;
+    border-style: none;
+    background-color: blue;   
+    display: flex;
+    justify-content: center; 
+    top: 350px;
+    left: 15%;
+    color: white;
+    padding: 22px 30px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.childishvideo input:hover{
+    color: black;
+    background-color: white;
+    transition: 0.3s ease;
+}
+
+#childishvideo {
+    position: absolute;
+    background-size: cover;
+    pointer-events: none;
+    width: 100%;
+    height: 90%;
+    left: 12%;
+}
+
+#childishvideo::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, transparent, black);
+    opacity: 0.5;
+}
+
+
+#earnings {
+    color: yellow;
+    text-decoration: underline;
+}
+
+.logoline{
+    position: absolute;
+    top: 57.5rem;
+    display: flex;
+    justify-content: space-around;
+    float: left;
+    width: 100%;
+    animation: scrolling 70s linear infinite;
+ }
+
+.logoline img{
+    flex: 0 0 16vw;
+    transition: all ease .2s;
+    width: auto;
+    display: block;
+
+}
+
+.moreservices{
+    position: absolute;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    color: #9f9f9f;
+    font-size: 16px;
+    letter-spacing: 1px;
+    bottom: 0.4rem;
+}
+
+.worldwide{
+    background-color: #080808;
+    height: 100vh;
+    width: 100%;
+}
+
+#worldwidepic{
+    width: 35%;
+    height: 63%;
+    position: relative;
+    left: 50%;
+    top: 14rem;
+}
+
+.worldwide h1{
+    color: white;
+    position: relative;
+    text-transform: uppercase;
+    left: 14rem;
+    bottom: 20rem;
+    font-size: 50px;
+    
+}
+
+.worldwide p{
+    color: white;
+    position: absolute;
+    font-size: 21px;
+    left: 14.2rem;
+    top: 95rem;
+    width: 39%;
+}
+
+.worldwide .grid{
+    position: relative;
+    /* grid-template-columns: repeat(4,2rem);
+    grid-template-rows: repeat(4,2rem);  
+    grid-gap: 8rem; */
+    left: 15%;
+    bottom: 10rem;
+    flex-wrap: wrap;
+}
+
+.worldwide .grid .row1{
+    position: relative;
+    max-width: 700px;
+    padding: 20px 0;
+    left: 3rem;
+}
+
+.worldwide .grid .row2{
+    position: relative;
+    max-width: 700px;
+    padding: 40px 0;
+    left: 3rem;
+}
+
+.worldwide .grid img{
+    width: 70px;
+    height: 40px;
+    padding: 10px 20px;
+    border: solid 2px #9f9f9f;
+    border: none;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+}
+
+.worldwide input{
+    position: relative;
+    left: 34rem;
+    bottom: 10rem;
+    color: white;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    border-style: none;
+    background-color: blue;   
+    display: flex;
+    justify-content: center; 
+    font-weight: bold;
+
+}
+
+.worldwide input:hover{
+    color: black;
+    background-color: white;
+    transition: 0.3s ease;
+}
+
+#else{
+    position: absolute;
+    top: 119.5rem;
+    left: 26rem;
+    font-size: 13px;
+    color: #9f9f9f;
+}
+
+#blackwhite{
+    filter: brightness(65%);
+    width: 100%;
+    height: 50%;
+}
+
+.unlimited h1{
+    position: relative;
+    color: white;
+    text-transform: uppercase;
+    font-size: 40px;
+    width: 25%;
+    left: 60%;
+    bottom: 60rem;
+}
+
+.unlimited p{
+    position: relative;
+    color: white;
+    font-size: 17px;
+    width: 26%;
+    left: 57.9%;
+    bottom: 58rem;
+}
+
+#give{
+    left: 63%;
+}
+
+#uploading{
+    position: absolute;
+    left: 59.5%;
+    top: 180rem;
+}
+
+.monetize .monetizing{
+    position: absolute;
+    width: 100%;
+    height: 140%;
+    top: 223rem;
+}
+
+.monetize .thegraph{
+    position: relative;
+    width: 100%;
+    top: 48.7rem;
+}
+
+.monetize h1{
+    position: relative;
+    color: white;
+    text-transform: uppercase;
+    font-size: 40px;
+    left: 20%;
+    top: 15rem;
+}
+
+.monetize p{
+    position: relative;
+    color: white;
+    font-size: 17px;
+    width: 30%;
+    left: 20%;
+    top: 17rem;
+    word-spacing: 1px;
+}
+
+.collab{
+    position: absolute;
+    top: 290rem;
+    width: 100%;
+    height: 100vh;
+    background-color: #141414;
+}
+
+.collab img{
+    position: relative;
+    width: 30%;
+    height: 35%;
+    left: 35%;
+    top: 30rem;
+}
+
+.collab h1{
+    position: relative;
+    text-transform: uppercase;
+    color: white;
+    left: 39%;
+    font-size: 40px;
+    bottom: 13rem;
+}
+
+.collab p{
+    position: relative;
+    font-size: 20px;
+    color: white;
+    left: 34%;
+    width: 40%;
+    bottom: 10rem;
+}
+
+#free{
+    left: 45%;
+}
+
+.included {
+    position: absolute;
+    top: 350rem;
+    width: 100%;
+    height: 100vh;
+    background-color: #0a0a09;
+}
+
+.included h1{
+    position: relative;
+    text-transform: uppercase;
+    color: white;
+    left: 40%;
+    top: 5rem;
+    font-size: 40px;
+}
+
+.included .benefits{
+    position: relative;
+    width: 100%;
+    max-width: 720px;
+    left: 32%;
+    top: 15rem;
+    background-color: #141414;
+    height: 50%;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+
+}
+
+.benefits .benefittext{
+    position: relative;
+    left: 3rem;
+    top: 3rem;
+    color: white;
+    font-size: 25px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.benefits .only{
+    position: relative;
+    left: 39.4rem;
+    bottom: 1.75rem;
+    color: #00d36e;
+    line-height: 24px;
+    font-weight: 600;
+    font-size: 17px;
+    text-align: center;
+    padding: 12px 24px;
+    border: solid #1a1a1a;
+    background-color: #1a1a1a;
+    border-bottom-left-radius: 8px;
+    border-top-right-radius: 8px;
+    width: 20%;
+}
+
+.benefits .benefitrow{
+    position: relative;
+    left: 3rem;
+    z-index: 5;
+    height: 13%;
+    color: #9f9f9f;
+    top: 1.75rem;
+}
+
+.benefitrow .thehr{
+    position: relative;
+    top: 1rem;
+    right: 3rem;
+    width: 115%;
+    border-color: black;
+}
+
+.benefitrow i{
+    position: relative;
+    color: #00d36e;
+    left: 45rem;
+    bottom: 1.5rem;
+}
+
+.included input{
+    position: relative;
+    left: 55rem;
+    top: 18rem;
+    color: white;
+    padding: 10px 30px;
+    font-size: 13px;
+    cursor: pointer;
+    border-radius: 5px;
+    border-style: none;
+    background-color: blue;   
+    display: flex;
+    justify-content: center; 
+    font-weight: 800;
+}
+
+.included input:hover{
+    color: black;
+    background-color: white;
+    transition: 0.3s ease;
+}
+
+
+
+.step{
+    position: absolute;
+    top: 420rem;
+}
+
+.step video{
+    position: relative;
+    width: 110%;
+}
+
+.step h1{
+    position: relative;
+    text-transform: uppercase;
+    color: white;
+    bottom: 50rem;
+    left: 8%;
+    width: 35%;
+    font-size: 46px;
+    font-weight: bold;
+}
+
+
+.step p{
+    position: relative;
+    color: white;
+    bottom: 48rem;
+    left: 8%;
+    font-size: 25px;
+    width: 27%;
+
+}
+
+.plan-container{
+    position: absolute;
+    max-width: 300px;
+    max-height: 300px;
+    width: 100%;
+    height: 100%;
+    background-color: #141414;
+    border: solid #141414;
+    border-radius: 8px;
+    border: none;
+    bottom: 25rem;
+    left: 9%;
+}
+
+
+.step span{
+    color: yellow;
+    text-decoration: underline;
+}
+
+#theplan{
+    position: absolute;
+    text-transform: uppercase;
+    color: #9f9f9f;
+    top: 4rem;
+    left: 15%;
+    font-size: 21px;
+    width: 100%;
+}
+
+#price{
+    position: absolute;
+    color: white;
+    top: 7rem;
+    left: 25%;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+#year{
+    position: relative;
+    color: #9f9f9f;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: normal;
+
+    text-transform: lowercase;
+}
+
+#tracks{
+    position: relative;
+    color: white;
+    left: 16%;
+    top: 10.5rem;
+    font-size: 22.5px;
+    font-weight: bold;
+    width: 100%;
+}
+
+#realstart{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    border-radius: 5px;
+    border-style: none;
+    background-color: blue;   
+    display: flex;
+    justify-content: center;
+    top: 12rem; 
+    left: 23%;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.footer-container{
+    position: absolute;
+    width: 120%;
+    height: 50vh;
+    margin: auto;
+    top: 500rem;
+}
+
+.footer-container .thehr2{
+    position: relative;
+    width: 170%;
+    height: 1px;
+    right: 3rem;
+    bottom: 6rem;
+    border-color: #1a1a1a;
+}
+
+.footer-container .footer-menu{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    order: 1;
+}
+
+.footer-menu .mobile-apps{
+    position: relative;
+    width: 20%;
+    height: 50%;
+    left: 20%;
+    top: 4rem;
+}
+
+.footer-menu .mobile-apps img{
+    position: relative;
+    width: 35%;
+    height: 30%;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    right: 0.7rem;
+}
+
+
+.footer-menu h1{
+    position: relative;
+    display: flex;
+    font-size: 17px;
+    white-space: nowrap;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.footer-menu a{
+    width: 8%;
+}
+
+
+.footer-container .footer-menu .menus{
+    position: relative;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    bottom: 19rem;
+    left: 38%;
+    bottom: 12rem;
+}
+
+#beats{
+    top: 8.6rem;
+    padding: 10px 0;
+}
+
+#about{
+    position: relative;
+    color: #b8b8b8;
+    text-decoration: none;
+    top: 9rem;
+    padding: 13px 0;
+}
+
+#support{
+    left: 17%;
+    bottom: 5rem;
+    padding: 10px 0;
+}
+
+#pricing{
+    position: relative;
+    color: #b8b8b8;
+    text-decoration: none;
+    padding: 13px 0;
+    left: 17%;
+    bottom: 4.5rem;
+}
+
+
+#press{
+    position: relative;
+    left: 36%;
+    padding: 10px 0;
+    bottom: 20.7rem;
+}
+
+#billboard{
+    position: relative;
+    color: #b8b8b8;
+    text-decoration: none;
+    padding: 13px 0;
+    left: 36%;
+    bottom: 20.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes scrolling {
+    0% { transform: translateX(160vw); }
+    100% { transform: translatex(-160vw); }
+  }
+  
