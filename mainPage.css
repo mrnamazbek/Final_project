@@ -167,13 +167,21 @@ body {
   /* justify-content: end; */
 }
 
-.dropdown:hover .dropbtn,
+
 .dropbtn2 {
-  color: rgb(255, 255, 255);
   background-color: transparent;
   border-radius: 2px+2px;
   margin-right: 4px;
+  color: black;
 
+}
+.dropbtn2:hover, .dropbtn:hover{
+  
+  cursor: grab;
+  background-color: rgba(128, 128, 128, 0.31);
+  border-radius: 10px;
+  height: inherit;
+  color: white;
 }
 
 .dropdown-content {
@@ -208,7 +216,7 @@ body {
 }
 
 .category {
-  margin-top: 50px;
+  margin-top: 60px;
   /*<--*/
   display: flex;
   align-items: center;

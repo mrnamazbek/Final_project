@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.communityImg{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: auto;
+    font-size: xx-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#autor{
+    width: 340px;
+    height: 660px;
+    opacity: 0.7;
+}
+#autor:hover{
+    width: 365px;
+    height: 690px;
+    transform: 1.2s;
+    opacity: 1;
+}
+.Premium {
+    height: 1080px;
+    background-color: black;
+}
