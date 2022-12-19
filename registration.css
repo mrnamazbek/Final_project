@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("./reg-photo.jpeg");
+    background-size: 100%;
+}
+.reg-area {
+    position: relative;
+    max-width: 370px;
+    width: 100%;
+    padding: 25px;
+    border-radius: 10px;
+    background-color: #1f1f1f;
+}
+.reg-area header {
+    color: whitesmoke;
+    font-size: 26px;
+    font-weight: 600;
+}
+.reg-area form {
+    margin-top: 30px;
+}
+form .field {
+    margin-bottom: 20px;
+}
+form .input-field {
+    position: relative;
+    height: 50px;
+    width: 100%;
+}
+.input-field input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding: 0 15px;
+    font-size: 15px;
+    font-weight: 600;
+    color: whitesmoke;
+    background: none;
+    caret-color: #5372F0;
+    border-radius: 5px;
+    border: 1px solid #d1d1d1;
+    border-bottom-width: 3px;
+}
+form .field .input-field input:focus{
+    border-color: #5372F0;
+}
+form .field.invalid input {
+    border-color: #d93025;
+}
+.input-field .show-hide {
+    position: absolute;
+    right: 13px;
+    top: 25%;
+    font-size: 18px;
+    color: #919191;
+    cursor: pointer;
+    padding: 3px;
+}
+.field .error {
+    align-items: center;
+    margin-top: 6px;
+    color: #d93025;
+    font-size: 13px;
+    display: none;
+}
+.invalid .error {
+    display: flex;
+}
+.error .error-icon {
+    margin-right: 6px;
+    font-size: 15px;
+}
+#password .error {
+    align-items: flex-start;
+}
+#password .error-icon {
+    margin-top: 4px;
+}
+.button {
+    margin: 25px 0 6px;
+}
+.button input {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #4070f4;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.button input:hover {
+    background-color: #0e4bf1;
+}
+
+.signup-txt {
+    margin-top: 30px;
+    color: whitesmoke;
+    text-align: center;
+}
+.signup-txt a{
+    color: #5372F0;
+    margin-left: 10px;
+    text-decoration: none;
+}
+.signup-txt a:hover{
+    text-decoration: underline;
+}
+

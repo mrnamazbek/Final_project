@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- Coding by CodingLab | www.codinglabweb.com-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Registration</title>
+    <link rel="stylesheet" href="./registration.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/e8f266f15b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="reg-area">
+    <header>Create your account</header>
+    <form action="#">
+        <div class="field" id="fullName">
+            <div class="input-field">
+                <input type="text" placeholder="Full Name" id="inputFullName"/>
+            </div>
+            <span class="error">
+                <i class="error-icon fa-solid fa-exclamation-circle"></i>
+                <p class="error-text">Full name can't be empty and have not contain any numbers, or symbols</p>
+            </span>
+        </div>
+        <div class="field" id="userName">
+            <div class="input-field">
+                <input type="text" placeholder="User Name" id="inputUserName"/>
+            </div>
+            <span class="error">
+                <i class="error-icon fa-solid fa-exclamation-circle"></i>
+                <p class="error-text">Username's length should be non-empty and no more than 12 symbols.</p>
+            </span>
+        </div>
+        <div class="field" id="email">
+            <div class="input-field">
+                <input type="text" placeholder="Enter Email" id="inputEmail"/>
+            </div>
+            <span class="error">
+                <i class="error-icon fa-solid fa-exclamation-circle"></i>
+                <p class="error-text">Email have to contain '@' symbol, and dot</p>
+            </span>
+        </div>
+        <div class="field" id="password">
+            <div class="input-field">
+                <input type="password" placeholder="Create password" id="inputPassword"/>
+                <i class="show-hide fa-solid fa-eye-slash"></i>
+            </div>
+            <span class="error">
+                <i class="error-icon fa-solid fa-exclamation-circle"></i>
+                <p class="error-text">Password can't be empty be with just one symbol</p>
+            </span>
+        </div>
+        <div class="field" id="confirm">
+            <div class="input-field">
+                <input type="password" placeholder="Confirm password" id="confirmPassword"/>
+                <i class="show-hide fa-solid fa-eye-slash"></i>
+            </div>
+            <span class="error">
+                <i class="error-icon fa-solid fa-exclamation-circle"></i>
+                <p class="error-text">Passwords don't match</p>
+            </span>
+        </div>
+        <div class="input-field button">
+            <input type="submit" value="Register" onclick="reg_php(inputEmail.value, inputPassword.value, confirmPassword.value, inputFullName.value, inputUserName.value)"/>
+        </div>
+    </form>
+    <div class="signup-txt">Already have an account?<a href="./index.html">Log In</a></div>
+</div>
+<script src="./registration.js"></script>
+</body>
+</html>
+

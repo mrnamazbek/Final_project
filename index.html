@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log_in</title>
+    <link rel="stylesheet" href="log_in.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/e8f266f15b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="login-area">
+    <header>Log in to your account</header>
+    <form action="#">
+        <div class="field" id="email">
+            <div class="input-area">
+                <input type="text" placeholder="Email" id="lastEmail">
+                <i class="icon fa-solid fa-user"></i>
+                <i class="error error-icon fa-solid fa-exclamation-circle"></i>
+            </div>
+            <div class="error error-txt">Email can't be empty</div>
+        </div>
+        <div class="field" id="password">
+            <div class="input-area">
+                <input type="password" placeholder="Password" id="lastPassword">
+                <i class="icon fa-solid fa-lock"></i>
+                <i class="error error-icon fa-solid fa-exclamation-circle"></i>
+            </div>
+            <div class="error error-txt">Password can't be empty</div>
+        </div>
+        <div class="remember"><a href="#">Don't remember your password?</a></div>
+        <input type="submit" value="Log In" onclick="log_php(lastEmail.value, lastPassword.value)">
+    </form>
+    <div class="signup-txt">Don't have an account?<a href="./registration.html">Sign up</a></div>
+</div>
+
+<script src="log_in.js"></script>
+
+</body>
+</html>
