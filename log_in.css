@@ -11,17 +11,34 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url("./login-photo.jpg");
     background-size: 100%;
+    background: linear-gradient(45deg, lightslategrey, darkslategrey, rgb(45, 70, 91), rgb(117, 117, 117));
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
+
 .login-area {
-    width: 380px;
+    width: 500px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 40px 30px 50px 30px;
     background: #1f1f1f;
     border-radius: 10px;
     text-align: center;
-    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 0 10px #fff;
+        box-shadow: 0 0 10px #fff;
 }
 
 .login-area header {

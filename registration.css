@@ -35,6 +35,8 @@ body {
     padding: 25px;
     border-radius: 10px;
     background-color: #1f1f1f;
+    -webkit-box-shadow: 0 0 15px #fff;
+        box-shadow: 0 0 15px #fff;  
 }
 .reg-area header {
     color: whitesmoke;

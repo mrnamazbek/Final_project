@@ -61,3 +61,16 @@ cart2.onmouseover = function() {
    slides[slideIndex-1].style.display = "block";
    dots[slideIndex-1].className += " active";
  }
+ const input = document.querySelector('.input-field');
+
+function showSubmitButton() {
+    const submit = document.querySelector('.submit-container');
+
+    if (input.value.includes('@gmail.com') || input.value.includes('@mail.ru')) {
+        submit.style.opacity = '1';
+    } else {
+        submit.style.opacity = '0';
+    }
+}
+
+input.addEventListener('input', showSubmitButton);

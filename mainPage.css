@@ -447,6 +447,7 @@ body {
     transform: translateY(-20px)
   }
 }
+
 /*carousel bottom*/
 .slideshow-container {
   max-width: 800px;
@@ -540,10 +541,11 @@ body {
     opacity: 1;
   }
 }
+
 .btn-shine {
-  
-  transform: translate(-50%,-50%);
-  
+
+  transform: translate(-50%, -50%);
+
   color: #ffffff;
   background: linear-gradient(to right, #4d4d4df2 0, rgb(255, 255, 255) 10%, #4d4d4d 20%);
 
@@ -552,24 +554,28 @@ body {
   animation: shine 5s infinite linear;
   animation-fill-mode: forwards;
   -webkit-text-size-adjust: none;
-  
+
 }
-@keyframes shine{
+
+@keyframes shine {
   0% {
     background-position: 0px;
   }
+
   50% {
     background-position: 200px;
   }
+
   100% {
     background-position: 520px;
   }
 }
+
 /*carousel top*/
 .takeBeats {
   display: flex;
- background-color: black;
- color: white;
+  background-color: black;
+  color: white;
   background-size: cover;
   animation: gradient 15s ease infinite;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -647,6 +653,7 @@ body {
 ::-webkit-scrollbar {
   display: none;
 }
+
 header {
   width: 100%;
   height: 100vh;
@@ -655,11 +662,13 @@ header {
   align-items: center;
   margin: 0;
 }
-#platforms{
+
+#platforms {
   position: absolute;
   margin: auto;
 }
-#learn_more{
+
+#learn_more {
   border-radius: 5px;
   color: white;
   width: 200px;
@@ -669,9 +678,11 @@ header {
   margin-top: 170px;
   margin-left: 10px;
 }
-#learn_more:hover{
+
+#learn_more:hover {
   background-color: rgba(96, 96, 96, 0.843);
 }
+
 header h1 {
   font-size: 70px;
   font-weight: 500;
@@ -681,29 +692,189 @@ header h1 {
   white-space: nowrap;
   overflow: hidden;
 }
-@keyframes cursor{
-  0%, 100%{border-color: transparent;}
-  50%{border-color: #000;}
+
+@keyframes cursor {
+
+  0%,
+  100% {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: #000;
+  }
 }
 
-@keyframes typing{
-  0%{ width: 0ch} /*Text is hidden*/
-  30%{ width: 16ch;} /*The enitre header will be typed out*/
-  80%{ width: 16ch;} /*Text stays visible*/
-  90%{ width: 0ch;} /*Text is deleted*/
-  100%{ width: 0ch;} /*Text stays hidden*/
+@keyframes typing {
+  0% {
+    width: 0ch
+  }
+
+  /*Text is hidden*/
+  30% {
+    width: 16ch;
+  }
+
+  /*The enitre header will be typed out*/
+  80% {
+    width: 16ch;
+  }
+
+  /*Text stays visible*/
+  90% {
+    width: 0ch;
+  }
+
+  /*Text is deleted*/
+  100% {
+    width: 0ch;
+  }
+
+  /*Text stays hidden*/
 }
-#infoBanner:hover{
+
+#infoBanner:hover {
   font-size: large;
   width: 300px;
   cursor: grab;
   height: auto;
-  box-shadow: 2px  2px 2px 2px rgba(255, 255, 255, 0.204);
+  box-shadow: 2px 2px 2px 2px rgba(255, 255, 255, 0.204);
 }
-.apps{
+
+.apps {
   gap: 10px;
 }
-#start_sel2:hover{
+
+#start_sel2:hover {
   width: 185px;
   height: 74px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
+.input {
+  margin-top: 100px;
+  position: relative;
+  display: flex;
+  width: 600px;
+  margin: auto;
+}
+
+.input-container {
+  position: relative;
+  display: flex;
+  width: 100%;
+  margin: 10px;
+}
+
+.input-field {
+  font-size: large;
+  padding: 24px;
+  background-color: rgb(222, 222, 222);
+  border: none;
+  border-radius: 2px;
+  width: 100%;
+  color: #000000;
+  outline: none;
+  z-index: 0;
+  -webkit-tap-highlight-color: transparent;
+  line-height: 1;
+}
+
+.input-field::-webkit-input-placeholder {
+  color: #464c6b;
+  line-height: 1;
+  padding-top: 2px;
+}
+
+.input-container:hover+.input-field-shadow {
+  -webkit-box-shadow: 0 0 25px rgb(180, 180, 180);
+  box-shadow: 0 0 25px rgb(180, 180, 180);
+}
+
+.input-container:focus+.input-field-shadow {
+  
+  height: 50%;
+  width: 97%;
+  left: 2%;
+}
+
+.input-field-shadow {
+  position: absolute;
+  display: flex;
+  width: 99%;
+  height: 95%;
+  bottom: 0;
+  left: 1%;
+  z-index: -10;
+  box-shadow: 0px 0px 5px #d8ddec;
+  border-radius: 2px;
+  transition: all ease 240ms;
+}
+
+
+.submit-container {
+  position: absolute;
+  z-index: 0;
+  margin: 10px;
+  right: -10px;
+  top: calc(25% - 11px);
+  opacity: 0;
+  transition: all ease 240ms;
+}
+
+.submit-btn {
+  border: none;
+  border-radius: 2px;
+  background-color: rgb(0, 76, 255);
+  border-radius: 4px;
+  padding: 12px 20px;
+  color: white;
+  text-transform: uppercase;
+  -webkit-appearance: none;
+  transition: all ease 240ms;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: rgb(57, 103, 177);
+}
+
+.submit-btn-shadow {
+  position: absolute;
+  display: flex;
+  width: 90%;
+  height: 50%;
+  bottom: 0;
+  left: 5%;
+  z-index: -5;
+  -webkit-box-shadow: 0 0 10px rgb(81, 81, 81);
+  box-shadow: 0 0 10px rgb(54, 54, 54);
+}
+hr.style-seven {
+  overflow: visible; /* For IE */
+  height: 30px;
+  border-style: solid;
+  border-color: rgb(255, 255, 255);
+  border-width: 1px 0 0 0;
+  border-radius: 20px;
+}
+hr.style-seven:before { /* Not really supposed to work, but does */
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -31px;
+  border-style: solid;
+  border-color: rgb(255, 255, 255);
+  border-width: 0 0 1px 0;
+  border-radius: 20px;
+}
+hr.style-five {
+  border: 0;
+  height: 0; /* Firefox... */
+  box-shadow: 0 0 10px 1px rgb(255, 255, 255);
+}
+hr.style-five:after {  /* Not really supposed to work, but does */
+  content: "\00a0";  /* Prevent margin collapse */
 }
