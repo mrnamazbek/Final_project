@@ -95,7 +95,7 @@ body {
 
 .logoline{
     position: absolute;
-    top: 57.5rem;
+    top: 50rem;
     display: flex;
     justify-content: space-around;
     float: left;
@@ -152,7 +152,7 @@ body {
     position: absolute;
     font-size: 21px;
     left: 14.2rem;
-    top: 95rem;
+    top: 80rem;
     width: 39%;
 }
 
@@ -215,7 +215,7 @@ body {
 
 #else{
     position: absolute;
-    top: 119.5rem;
+    top: 105.5rem;
     left: 26rem;
     font-size: 13px;
     color: #9f9f9f;
@@ -253,20 +253,23 @@ body {
 #uploading{
     position: absolute;
     left: 59.5%;
-    top: 180rem;
+    top: 155rem;
 }
 
+.monetize{
+    height: 100vh;
+}
 .monetize .monetizing{
     position: absolute;
     width: 100%;
-    height: 140%;
-    top: 223rem;
+    height: 160%;
+    top: 203rem;
 }
 
 .monetize .thegraph{
     position: relative;
     width: 100%;
-    top: 48.7rem;
+    top: 76rem;
 }
 
 .monetize h1{
@@ -292,7 +295,7 @@ body {
     position: absolute;
     top: 290rem;
     width: 100%;
-    height: 100vh;
+    height: 102.5vh;
     background-color: #141414;
 }
 
@@ -614,7 +617,7 @@ body {
 }
 
 #beats{
-    top: 8.6rem;
+    top: 11.6rem;
     padding: 10px 0;
 }
 
@@ -622,13 +625,13 @@ body {
     position: relative;
     color: #b8b8b8;
     text-decoration: none;
-    top: 9rem;
+    top: 12rem;
     padding: 13px 0;
 }
 
 #support{
     left: 17%;
-    bottom: 5rem;
+    bottom: 2rem;
     padding: 10px 0;
 }
 
@@ -638,7 +641,7 @@ body {
     text-decoration: none;
     padding: 13px 0;
     left: 17%;
-    bottom: 4.5rem;
+    bottom: 1.5rem;
 }
 
 
@@ -646,7 +649,7 @@ body {
     position: relative;
     left: 36%;
     padding: 10px 0;
-    bottom: 20.7rem;
+    bottom: 18.2rem;
 }
 
 #billboard{
@@ -655,7 +658,7 @@ body {
     text-decoration: none;
     padding: 13px 0;
     left: 36%;
-    bottom: 20.5rem;
+    bottom: 18rem;
 }
 
 
@@ -668,7 +671,8 @@ body {
 
 
 
-
+@media screen () {
+}a
 
 
 
@@ -685,4 +689,5 @@ body {
     0% { transform: translateX(160vw); }
     100% { transform: translatex(-160vw); }
   }
+  
   
