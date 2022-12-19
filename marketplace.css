@@ -26,5 +26,15 @@ body{
 }
 .Premium {
     height: 1080px;
-    background-color: black;
+    background-color: rgb(0, 10, 0);
+}
+#Prem1 {
+    display: flex;
+    width: fit-content;
+    margin: auto;
+    opacity: 0.89;
+} #Prems:hover {
+    opacity: 1;
+    width: 392px;
+    height: 605px;
 }
