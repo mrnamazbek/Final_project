@@ -13,7 +13,6 @@ define('DB_NAME', 'front');
     if(isset($_POST['email'])){
         $uemail = $_POST['email'];
         $upassword = $_POST['password'];
-
         $sql = "select * from users where email = '$uemail' AND password = '$upassword' limit 1";
 
         $result = mysqli_query($link, $sql);

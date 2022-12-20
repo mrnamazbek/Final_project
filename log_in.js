@@ -43,9 +43,9 @@ function log_php(lastEmail, lastPassword){
         data: {email: lastEmail, password: lastPassword},
         success: function (result){
             console.log(result);
-            if(result == "Logged IN!"){
-                document.getElementById('signId').style.display = 'none';
+            if(result === "Logged IN!"){
                 window.alert("You have logged in successfully");
+                window.location.replace ("/mainPage.html");
             }
             else window.alert("Wrong login or password");
         },

@@ -21,6 +21,7 @@ if(isset($_POST['email'])){
     $result = mysqli_query($link, $sql);
 
     if($result){
+        
         echo "Success!";
         exit();
     }
