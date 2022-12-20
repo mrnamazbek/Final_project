@@ -544,6 +544,12 @@ body {
     cursor: pointer;
 }
 
+#realstart:hover{
+    color: black;
+    background-color: white;
+    transition: 0.3s ease;
+}
+
 .footer-container{
     position: absolute;
     width: 120%;
@@ -864,7 +870,7 @@ body {
 
 
   .category {
-    margin-top: 50px;
+    margin-top: 70px;
     /*<--*/
     display: flex;
     align-items: center;
@@ -1111,7 +1117,7 @@ body {
 
     .monetize .thegraph{
         width: 100%;
-        bottom: 2rem;
+        bottom: 4rem;
     }
 
     .monetize h1{
@@ -1259,7 +1265,7 @@ body {
 }
 
 
-@media only screen and (max-width: 980px) and (min-width: 480px){
+@media only screen and (max-width: 980px){
     html{
         height: 340vh;
     }
@@ -1267,6 +1273,10 @@ body {
     *{
         max-width: 980px;
         width: 100%;
+    }
+
+    .regis{
+        display: none;
     }
 
     .topnav{
