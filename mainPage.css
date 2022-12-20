@@ -19,6 +19,10 @@
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: larger;
 }
+#menuu {
+  display: none;
+  color: white;
+}
 body {
   margin: 0;
   background-color: rgb(0, 0, 0);
@@ -131,7 +135,6 @@ body {
   margin-left: 200px;
   display: grid;
   position: absolute;
-  overflow-x: hidden;
 }
 
 #title {
@@ -972,53 +975,68 @@ hr.style-five:after {  /* Not really supposed to work, but does */
 
   text-decoration: none;
 }
-@media screen and (max-width : 1000px) {
-  #mainBar {
-    display: flex;
-    justify-items: center;
-  }
-  .category {
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-  }
-  .takeBeats {
-    display: grid;
-  }
-  #category{
-      width:  380%;
-  }
-  #finder{
-      width: 250%;
-  }
-  #imgs{
-      width: 260%;
-  }
-  #oz1{
-      width: 250%;
-  }
-  .btn-shine{
-      width: 200%;
-  }
-  .takeBeats{
-      width: 250%;
-  }
-  .oz2{
-      width: 250%;
-  }
-  .oz3,.oz4{
-      width: 280%;
-  }
-  .input{
-      width: 250%;
-  }
-  .style-seven,.sony{
-      width: 260%;
-  }
-  .waviy, #oz5, #oz6,.RecPlaylist{
-      width: 260%;
-  }
-  .slideshow-container, .oz7{
-      width: 260%;
-  }
+@media only screen and (max-width : 800px) {
+      .topnav {
+        max-width: 800px;
+
+      }
+      .regis {
+        display: none;
+      }
+      .sign {
+        display: none;
+      }
+      #title {
+        font-size: large;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin-top: 250px;
+        margin-left:50px;
+      }
+      .Tranding {
+        display: none;
+      }
+      #finder {
+        margin: auto;
+      }
+      #releaseGraph{
+        display: none;
+      }
+      .btn-shine {
+        font-size: large;
+      }
+      .inputs {
+        position: inherit;
+        padding: 0%;
+      }
+      #username {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .inputs {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+          margin-top: 300px;
+          margin-left: 50px;
+      }
+      .takeBeats {
+        display: grid;
+      }
+      .takeBeats img{
+        width: 100%;
+        height: auto;
+      }
+      #oz2 {
+        display: grid;
+        font-size: medium;
+      }
+      #kopJazu{
+        display: none;
+      }
+      #oz2 img{
+        width: 100%;
+        height: auto;
+      }
 }
