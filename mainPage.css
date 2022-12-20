@@ -12,6 +12,7 @@
   z-index: -1;
   width: 100%;
   height: auto;
+  overflow-x: hidden;
 }
 #userIcon{
   display: none;
@@ -130,6 +131,7 @@ body {
   margin-left: 200px;
   display: grid;
   position: absolute;
+  overflow-x: hidden;
 }
 
 #title {
@@ -273,7 +275,13 @@ body {
   color: white;
 }
 #itemss {
-  display:grid;text-align: left; justify-items: center; align-items: center;max-width: 200px;margin-left: 15px;
+  display:grid;text-align: left; justify-items: center; align-items: center;max-width: 200px;margin: 15px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#itemss:hover {
+  background-color: rgba(121, 121, 121, 0.493);
+  border-radius: 6px;
+  transition: 0.89s;
 }
 .category {
   margin-top: 60px;
@@ -320,6 +328,7 @@ body {
   gap: 20px;
   right: 0;
   margin-right: 100px;
+  justify-content: center;
 }
 
 .sign {
@@ -338,6 +347,9 @@ body {
   background-color: rgb(0, 106, 255);
   border-radius: 7px;
   border: none;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
   text-align: center;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -350,8 +362,10 @@ body {
 
 .sign:hover {
   color: white;
-  transition: 0.6s;
+  transition: 0.4s;
   font-size: larger;
+  background-color: rgba(158, 158, 158, 0.545);
+  border-radius: 7px;
 }
 
 .Tranding {
@@ -392,7 +406,9 @@ body {
   overflow-x: auto;
 
 }
-
+a:hover {
+  color: white;
+}
 #imgs img {
   border-style: double;
   width: 245px;
@@ -957,11 +973,20 @@ hr.style-five:after {  /* Not really supposed to work, but does */
   text-decoration: none;
 }
 @media screen and (max-width : 1000px) {
-  #videoDiv{
-      width: 310%;
+  #mainBar {
+    display: flex;
+    justify-items: center;
+  }
+  .category {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+  }
+  .takeBeats {
+    display: grid;
   }
   #category{
-      width: 280%;
+      width:  380%;
   }
   #finder{
       width: 250%;
