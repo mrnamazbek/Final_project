@@ -213,6 +213,7 @@ body {
 .dropdown:hover .dropdown-content {
   display: block;
   position: fixed;
+  opacity: 2;
 }
 
 .category {
@@ -895,4 +896,45 @@ hr.style-five:after {  /* Not really supposed to work, but does */
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
   text-decoration: none;
+}
+@media screen and (max-width : 1000px) {
+  #videoDiv{
+      width: 310%;
+  }
+  #category{
+      width: 280%;
+  }
+  #finder{
+      width: 250%;
+  }
+  #imgs{
+      width: 260%;
+  }
+  #oz1{
+      width: 250%;
+  }
+  .btn-shine{
+      width: 200%;
+  }
+  .takeBeats{
+      width: 250%;
+  }
+  .oz2{
+      width: 250%;
+  }
+  .oz3,.oz4{
+      width: 280%;
+  }
+  .input{
+      width: 250%;
+  }
+  .style-seven,.sony{
+      width: 260%;
+  }
+  .waviy, #oz5, #oz6,.RecPlaylist{
+      width: 260%;
+  }
+  .slideshow-container, .oz7{
+      width: 260%;
+  }
 }
